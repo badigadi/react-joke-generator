@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(192, 47, 47), rgb(115, 10, 201));
+  font-family: 'Oswald', sans-serif;
+  padding: 0 10px;
+}
+
+div.joke-body h1 {
+  line-height: 1;
+  font-size: 40px;
+  color: #fbfbfb;
+  text-align: center;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+div.joke-body {
+  max-width: 600px;
+  margin: 5vh auto;
+  background: linear-gradient(to top, rgb(34, 32, 32), rgb(68, 68, 70));
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+div.joke-body > ul {
+  list-style-type: decimal;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header > a {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(40, 201, 40);
+  padding: 10px;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.header > a:hover {
+  opacity: 0.8;
+}
+
+.meme {
+  border-bottom: 3px solid gray;
+}
+
+.meme-title {
+  font-size: 18px;
+}
+
+.meme-punchline {
+  background: rgba(1, 1, 1, 0.9);
+  color: #fff;
+  user-select: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  .meme-title {
+    font-size: 14px;
+  }
+  .meme-punchline {
+    font-size: 15px;
+  }
+  div.joke-body h1 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 380px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+}
